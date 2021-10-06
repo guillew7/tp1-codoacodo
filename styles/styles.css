@@ -1,0 +1,63 @@
+:root {
+    --backgroundColorHeader: rgb(86, 101, 115);
+    --colorMenu: rgb(241, 196, 15);
+    --colorCarrito: rgb(243, 156, 18);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--backgroundColorHeader);
+}
+
+#titulo {
+    visibility: hidden;
+    display: none;
+}
+
+#logotipo {
+    height: 8rem;
+}
+
+#menuNavegacion {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menuNavegacion>li {
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    color: var(--colorMenu);
+    padding: 0.3rem;
+}
+
+.navURL {
+    text-decoration: none !important;
+}
+
+#carrito {
+    font-size: 48px;
+    color: var(--colorCarrito);
+}
+
+.navURL:visited {
+    color: var(--colorMenu);
+}
+
+.navURL:hover {
+    color: var(--colorCarrito);
+}
+
+#carrito:hover {
+    color: var(--colorMenu);
+}
+
+.navURL:focus {
+    text-shadow: 0 0 30px #fff;
+}
