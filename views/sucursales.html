@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursales</title>
-    <link href="../assets/Icon - Pizza.jpg" type="jpg" rel="icon"/>
-    <link rel="stylesheet" href="../styles/normalize.css"/>
+    <link href="../assets/iconPizza.jpg" rel="icon" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
-    
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
+        <a href="../index.html"><img src="../assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../views/promociones.html" class="navURL">Promociones</a></li>
+                <li><a href="../views/menu.html" class="navURL">Menú</a></li>
+                <li><a href="../views/sucursales.html" class="navURL">Sucursales</a></li>
+                <li><a href="../views/novedades.html" class="navURL">Novedades</a></li>
+                <li><a href="../views/recetas.html" class="navURL">Recetas</a></li>
+                <li><a href="../views/contacto.html" class="navURL">Contacto</a></li>
+                <li><a href="../views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
