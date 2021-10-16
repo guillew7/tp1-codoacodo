@@ -56,6 +56,11 @@ nav {
 
 .menu li:hover {
     background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.menu li:active {
+    text-shadow: 0px 0px 20px var(--colorMenu);
 }
 
 #linkCarrito{
@@ -106,5 +111,21 @@ nav {
 
     #btn-menu:checked ~ .menu {
         margin-left: 1px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu li a {
+        font-size: small;
+    }
+
+    #carrito {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 290px) {
+    .menu li a {
+        font-size: x-small;
     }
 }
