@@ -5,59 +5,127 @@
 }
 
 header {
+    background-color: var(--backgroundColorHeader);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: var(--backgroundColorHeader);
 }
 
-#titulo {
-    visibility: hidden;
+#btn-menu {
     display: none;
 }
 
-#logotipo {
-    height: 8rem;
+#btn-menu-hamburguesa {
+    font-size: 36px;
+    color: var(--colorMenu);
 }
 
-#menuNavegacion {
-    list-style-type: none;
-    padding-left: 0px;
-    width: 50vw;
+header label {
+    display: none;
+    padding: 15px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#logotipo {
+    width: 10vw;
+}
+
+nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
 }
 
-#menuNavegacion>li {
-    font-family: 'Lobster', cursive;
-    font-size: x-large;
-    color: var(--colorMenu);
-    padding: 0.3rem;
+.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
 
-.navURL {
-    text-decoration: none !important;
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    color: var(--colorMenu);
+    padding: 15px 20px;
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.menu li:active {
+    text-shadow: 0px 0px 20px var(--colorMenu);
+}
+
+#linkCarrito{
+    padding: 0px 20px;
+    margin: 5% 0px;
 }
 
 #carrito {
-    font-size: 48px;
     color: var(--colorCarrito);
+    font-size: 36px;
 }
 
-.navURL:visited {
-    color: var(--colorMenu);
+@media (max-width: 768px) {
+    
+    header {
+        justify-content: space-between;
+    }
+
+    header label {
+        display: block;
+    }
+
+    #logotipo {
+        width: 100px;
+        padding-right: 4vw;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: var(--backgroundColorHeader);
+        margin-left: -100%;
+        margin-top: 70px;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        width: 30vw;
+        border-top: 1px solid white;
+    }
+
+    .menu li a {
+        font-size: medium;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin-left: 1px;
+    }
 }
 
-.navURL:hover {
-    color: var(--colorCarrito);
+@media (max-width: 360px) {
+    .menu li a {
+        font-size: small;
+    }
+
+    #carrito {
+        font-size: 24px;
+    }
 }
 
-#carrito:hover {
-    color: var(--colorMenu);
-}
-
-.navURL:focus {
-    text-shadow: 0 0 30px #fff;
+@media (max-width: 290px) {
+    .menu li a {
+        font-size: x-small;
+    }
 }
