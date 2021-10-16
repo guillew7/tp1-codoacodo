@@ -1,0 +1,7 @@
+main{
+    display: flex;
+    align-items:center;
+    margin: 2rem;
+    flex-wrap:wrap;
+
+}

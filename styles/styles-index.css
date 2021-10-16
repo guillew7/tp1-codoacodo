@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    align-items:center;
+    margin: 2rem;
+    flex-wrap:wrap;
+
+}
+.s-main{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 30rem;
+    justify-content:space-around;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 10%;
+    margin: 1rem;
+}
