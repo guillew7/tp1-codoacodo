@@ -1,0 +1,82 @@
+:root{
+    --colorBordeForm: rgb(86, 101, 115);
+    --colorBoton: rgb(252, 204, 128);
+    --colorBoxShadow: rgb(236, 222, 164);
+}
+
+#pagina-contacto{
+font-family: 'Lobster', cursive;
+}
+#titulo{
+    text-align: center;
+}
+
+#s-form{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#fieldset{
+    text-align: center;
+    border:var(--colorBordeForm) 0.3rem double;
+    border-radius: 10%;
+    align-items: center;
+}
+label{
+    display: block;
+    margin: 1.5rem;
+}
+#en-linea{
+    display: inline;
+}
+
+input, textarea, select{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    border-radius: 2%;
+    padding: 0.5rem;
+    box-shadow: 0.3rem 0.3rem var(--colorBoxShadow);
+}
+
+
+#suscripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+#cbox{
+    box-shadow: none;
+}
+
+button{
+    height: 3rem;
+    border-radius: 20%;
+    background-color: var(--colorBoton);
+}
+
+
+@media (max-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    section{ 
+        font-size: 1.2rem;
+    }
+    input,textarea,select{
+        font-size: 0.9rem;
+    }
+    button{
+        height: 2rem;
+    }
+}
+@media (max-width:360px){
+    h1{
+        font-size: 1rem;
+    }
+    section{ 
+        font-size: 1rem;
+    }
+    input,textarea,select{
+        font-size: 0.7rem;
+    }
+}
