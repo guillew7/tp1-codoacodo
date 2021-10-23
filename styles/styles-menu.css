@@ -1,7 +1,141 @@
 main{
     display: flex;
     align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 2rem;
-    flex-wrap:wrap;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+.menuses{
+    display: flex;
+    flex-direction: column;
+    
+}
+.titulos-menus{
+    text-align: center;
+}
+.img-responsive {
+    width: 80%;
+   
+}
+.sect-main{
+    width: 35vw;
+    height: 45vw;
+    border: 1rem double black;
+    border-radius: 10%;
+    margin: 3rem;
+    background-color: blueviolet;
+    
+    
+}
+.div-main{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+    
+}
+.div-main li{
+    font-size: 2.5rem;
+}
+#flechaa{
+    margin-bottom: 100px;
+}
+/*MENU RESPONSIVE*/
+.menu-responsive label{
+    display: none;
+    height: 30px;
+    font-size: 25px;
+    padding: 10px;
+    
+}
 
+.botones-menu{
+    display: none;
+}
+
+.menu-responsive span{
+    margin-bottom: 100px;
+}
+
+.flecha2{
+    display: none;
+}
+
+.flecha, span.flecha2{
+    font-size: 48px;  
+}
+label u{
+    padding-top: 8px;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    main{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: chocolate;
+        padding: 0.5rem;
+        margin: 1rem;
+        
+    }
+    
+    .sect-main{
+        display: none;
+        background-color: brown;
+        width: 75vw;
+        margin: 0;
+        align-self: center;
+    }
+    
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+    .div-main li{
+        font-size: 2rem;
+        margin-right: 250px;
+    }
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    
+    
+    .menu-responsive label{
+        display: flex;
+    }
+    .sect-main h1{
+        font-size: 50px;
+    }
+    
+    #btn-menu-pizza:checked ~ .sect-main {
+        display: block;
+    }
+    /*
+    #btn-menu-pizza:checked ~ .flecha {
+        display: none;
+    }
+    #btn-menu-pizza:checked ~ .flecha2 {
+        display: block;
+    }
+    */
+    #btn-menu-empanadas:checked ~ .sect-main {
+        display: block;
+    }
+    #btn-menu-bebidas:checked ~ .sect-main {
+        display: block;
+    }
+    #btn-menu-postres:checked ~ .sect-main {
+        display: block;
+    }
 }
