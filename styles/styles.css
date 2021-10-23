@@ -1,16 +1,16 @@
 :root {
-    --backgroundColorHeader: rgb(86, 101, 115);
-    --colorMenu: rgb(241, 196, 15);
+    --backgroundColor: rgb(86, 101, 115);
+    --colorAmarillo: rgb(241, 196, 15);
     --colorCarrito: rgb(243, 156, 18);
-
     --verdewapp:rgb(9, 165, 9);
-    --backgroundColorFooter: rgb(86, 101, 115);
-    --colorFontFooter: rgb(241, 196, 15);
 }
 
 /*HEADER*/
 header {
-    background-color: var(--backgroundColorHeader);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: var(--backgroundColor);
     display: flex;
     justify-content: space-around;
 }
@@ -21,7 +21,7 @@ header {
 
 #btn-menu-hamburguesa {
     font-size: 36px;
-    color: var(--colorMenu);
+    color: var(--colorAmarillo);
 }
 
 header label {
@@ -55,7 +55,7 @@ nav {
     text-decoration: none;
     font-family: 'Lobster', cursive;
     font-size: large;
-    color: var(--colorMenu);
+    color: var(--colorAmarillo);
     padding: 15px 20px;
 }
 
@@ -65,7 +65,7 @@ nav {
 }
 
 .menu li:active {
-    text-shadow: 0px 0px 20px var(--colorMenu);
+    text-shadow: 0px 0px 20px var(--colorAmarillo);
 }
 
 #linkCarrito{
@@ -95,7 +95,7 @@ nav {
 
     .menu {
         position: absolute;
-        background-color: var(--backgroundColorHeader);
+        background-color: var(--backgroundColor);
         margin-left: -100%;
         margin-top: 70px;
         transition: all 0.5s;
@@ -160,11 +160,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--backgroundColorFooter);
+    background-color: var(--backgroundColor);
     padding: 1rem;
     font-family: 'Lobster', cursive;
     font-size: 1.2rem;
-    color: var(--colorFontFooter);
+    color: var(--colorAmarillo);
     }
 
 .s-footer{
