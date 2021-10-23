@@ -1,0 +1,185 @@
+:root {
+    --backgroundColor: rgb(86, 101, 115);
+    --colorAmarillo: rgb(241, 196, 15);
+    --colorCarrito: rgb(243, 156, 18);
+    --verdewapp:rgb(9, 165, 9);
+}
+
+/*HEADER*/
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu-hamburguesa {
+    font-size: 36px;
+    color: var(--colorAmarillo);
+}
+
+header label {
+    display: none;
+    padding: 15px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#logotipo {
+    width: 10vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    color: var(--colorAmarillo);
+    padding: 15px 20px;
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.menu li:active {
+    text-shadow: 0px 0px 20px var(--colorAmarillo);
+}
+
+#linkCarrito{
+    padding: 0px 20px;
+    margin: 5% 0px;
+}
+
+#carrito {
+    color: var(--colorCarrito);
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        justify-content: space-between;
+    }
+
+    header label {
+        display: block;
+    }
+
+    #logotipo {
+        width: 100px;
+        padding-right: 4vw;
+    }
+
+    .menu {
+        position: absolute;
+        background-color: var(--backgroundColor);
+        margin-left: -100%;
+        margin-top: 70px;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        width: 30vw;
+        border-top: 1px solid white;
+    }
+
+    .menu li a {
+        font-size: medium;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin-left: 1px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu li a {
+        font-size: small;
+    }
+
+    #carrito {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 290px) {
+    .menu li a {
+        font-size: x-small;
+    }
+}
+
+/*LOGO WHATSAPP*/
+#btn-wapp{
+    position:fixed;
+    background-size: 5rem;
+    text-decoration: none;
+    width: 5rem;
+    height: 5rem;
+    color: var(--verdewapp);
+    font-size: 5rem;
+    right: 1rem;
+    bottom:1rem;
+}
+
+#btn-wapp:hover{
+    background: var(--verdewapp);
+    background-size: 6rem;
+    border-radius: 50%;
+    color: white;
+}
+
+/*FOOTER*/
+footer{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    padding: 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    color: var(--colorAmarillo);
+    }
+
+.s-footer{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.s-footer>p{
+    margin-right: 1rem;
+}
+.map-footer{
+    border: 0.2rem dashed red;
+    border-radius: 20%;
+}
+#map{
+    border-radius: 20%;
+}
