@@ -5,6 +5,9 @@
 }
 
 header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
     background-color: var(--backgroundColorHeader);
     display: flex;
     justify-content: space-around;
@@ -94,6 +97,7 @@ nav {
         margin-left: -100%;
         margin-top: 70px;
         transition: all 0.5s;
+        z-index: 100;
     }
 
     .menu ul {
@@ -115,6 +119,10 @@ nav {
 }
 
 @media (max-width: 360px) {
+    .menu {
+        z-index: 100
+    }
+
     .menu li a {
         font-size: small;
     }
@@ -125,6 +133,10 @@ nav {
 }
 
 @media (max-width: 290px) {
+    .menu {
+        z-index: 100
+    }
+
     .menu li a {
         font-size: x-small;
     }
