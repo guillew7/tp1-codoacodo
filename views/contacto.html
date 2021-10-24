@@ -42,20 +42,24 @@
 
             <fieldset id=fieldset>
             <legend>Datos personales</legend>
-            <label> Nombre: <input type="text" name="nombre" id="nombre" required></label> 
-            <label> Apellido: <input type="text" name="apellido" id="apellido" required></label> 
-            <label> Email: <input type="text" name="email" id="email" required></label> 
-            <label> Teléfono: <input type="text" name="telefono" id="telefono"></label> 
+            <div id="div-datos">
+            <label class="label-form"> <span>Nombre:  </span> <input class="input-form" type="text" name="nombre" id="nombre" required></label> 
+            <label class="label-form"> <span>Apellido:  </span> <input class="input-form"  type="text" name="apellido" id="apellido" required></label> 
+            <label class="label-form"> <span>Email: </span> <input class="input-form"  type="text" name="email" id="email" required></label> 
+            <label class="label-form"> <span>Telefono:  </span> <input class="input-form"  type="text" name="telefono" id="telefono"></label> 
+            
 
-            <label>Motivo de consulta:</label>
-            <select name="consulta" id="consulta">
+            <label class="label-form"><span>Motivo de consulta:</span>
+            <select name="consulta" class="input-form">
             <option value="sugerencias">Sugerencias o reclamos</option>
             <option value="franquicia">Quiero abrir una franquicia</option>
             <option value="otros">Otros</option>
-            </select> <br> <br>
+            </select> </label>
+        </div>
+            <br>
 
             <textarea name="comentarios" rows="20" cols="50">Escribinos acá tus comentarios...</textarea> <br> 
-            <label id="suscripcion"><input type="checkbox" id="cbox" value="suscripcion"> Quiero suscribirme a la lista de contactos de "El Manjar" para recibir novedades sobre promociones y descuentos</label><br>
+            <label  class="label-form" id="suscripcion"><input type="checkbox" id="cbox" value="suscripcion"> Quiero suscribirme a la lista de contactos de "El Manjar" para recibir novedades sobre promociones y descuentos</label><br>
             <button id="botonEnviar" type="submit" onclick="validarFormulario()">Enviar</button>
             </fieldset>
             
