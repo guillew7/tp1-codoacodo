@@ -33,16 +33,14 @@ const validarEmail = function(email) {
     } else {
     emailOk=false;
     datosError.push("Email");
-    email.style.borderColor= "red";
-    email.style.backgroundColor= "#FFBFBF";
+    errorInput(email);
     }
 }
 const validarTelefono = function(telefono) {
     if (isNaN(telefono.value)==true || (telefono.value.length <8)){
     telefonoOk=false;
     datosError.push("Telefono");
-    telefono.style.borderColor= "red";
-    telefono.style.backgroundColor= "#FFBFBF";
+    errorInput(telefono);
     } else {
     telefonoOk=true;
     clearInput(telefono);
