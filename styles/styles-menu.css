@@ -7,8 +7,17 @@ main{
     justify-content: center;
     background-color: cornflowerblue;
 }
+#menuses{
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 50% 50%; 
+     
+    grid-template-areas: 
+      ". ."
+      ". .";
     
 }
+
 .titulos-menus{
     text-align: center;
 }
@@ -36,7 +45,7 @@ main{
     
 }
 .div-main li{
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 #flechaa{
     margin-bottom: 100px;
