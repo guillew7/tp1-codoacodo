@@ -7,9 +7,6 @@ main{
     justify-content: center;
     background-color: cornflowerblue;
 }
-.menuses{
-    display: flex;
-    flex-direction: column;
     
 }
 .titulos-menus{
