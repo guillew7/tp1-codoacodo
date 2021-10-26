@@ -51,12 +51,16 @@ flex-direction: column;
 
 .input-form, textarea, select{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
     padding: 0.5rem;
     box-shadow: 0.3rem 0.3rem var(--colorBoxShadow);
 }
 
 .input-form, select{
     width: 40vw;
+}
+.input-form:focus{
+    outline: none;
 }
 
 select, textarea{
@@ -91,8 +95,8 @@ button{
     #s-form{ 
         font-size: 1.2rem;
     }
-    input,textarea,select{
-        font-size: 0.9rem;
+    .input-form,textarea,select{
+        font-size: 0.7rem;
     }
     button{
         height: 2rem;
@@ -105,7 +109,10 @@ button{
     #s-form{ 
         font-size: 1rem;
     }
-    input,textarea,select{
-        font-size: 0.7rem;
+    .input-form,textarea,select{
+        font-size: 0.5rem;
+    }
+    #suscripcion{
+        font-size: 0.6rem;
     }
 }

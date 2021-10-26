@@ -36,7 +36,7 @@
 
 
     <section id="s-form">
-        <form id="formulario" action="https://formspree.io/f/xyylvqyy" method="post">
+        <form id="formulario" action="https://formspree.io/f/xyylvqyy" method="post" target="_blank">
 
             
 
@@ -46,7 +46,7 @@
             <label class="label-form"> <span>Nombre:  </span> <input class="input-form" type="text" name="nombre" id="nombre" required></label> 
             <label class="label-form"> <span>Apellido:  </span> <input class="input-form"  type="text" name="apellido" id="apellido" required></label> 
             <label class="label-form"> <span>Email: </span> <input class="input-form"  type="text" name="email" id="email" required></label> 
-            <label class="label-form"> <span>Telefono:  </span> <input class="input-form"  type="text" name="telefono" id="telefono"></label> 
+            <label class="label-form"> <span>Telefono:  </span> <input class="input-form"  type="text" name="telefono" id="telefono" placeholder="Ingrese solo números: 01122224444" minlength="8" required></label> 
             
 
             <label class="label-form"><span>Motivo de consulta:</span>
@@ -58,7 +58,7 @@
         </div>
             <br>
 
-            <textarea name="comentarios" rows="20" cols="50">Escribinos acá tus comentarios...</textarea> <br> 
+            <textarea name="comentarios" rows="20" cols="50" onfocus="clearContents(this);">Escribinos acá tus comentarios...</textarea> <br> 
             <label  class="label-form" id="suscripcion"><input type="checkbox" id="cbox" value="suscripcion"> Quiero suscribirme a la lista de contactos de "El Manjar" para recibir novedades sobre promociones y descuentos</label><br>
             <button id="botonEnviar" type="submit" onclick="validarFormulario()">Enviar</button>
             </fieldset>
