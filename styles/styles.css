@@ -54,7 +54,7 @@ nav {
     display: block;
     text-decoration: none;
     font-family: 'Lobster', cursive;
-    font-size: large;
+    font-size: x-large;
     color: var(--colorAmarillo);
     padding: 15px 20px;
 }
@@ -75,7 +75,7 @@ nav {
 
 #carrito {
     color: var(--colorCarrito);
-    font-size: 36px;
+    font-size: 48px;
 }
 
 @media (max-width: 768px) {
@@ -136,7 +136,7 @@ nav {
 }
 
 /*LOGO WHATSAPP*/
-#btn-wapp{
+#btn-wapp {
     position:fixed;
     background-size: 5rem;
     text-decoration: none;
@@ -148,7 +148,7 @@ nav {
     bottom:1rem;
 }
 
-#btn-wapp:hover{
+#btn-wapp:hover {
     background: var(--verdewapp);
     background-size: 6rem;
     border-radius: 50%;
@@ -156,7 +156,7 @@ nav {
 }
 
 /*FOOTER*/
-footer{ 
+footer { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,19 +167,19 @@ footer{
     color: var(--colorAmarillo);
     }
 
-.s-footer{
+.s-footer {
     display: flex;
     align-items: center;
     padding: 0.5rem;
     margin: 0.5rem;
 }
-.s-footer>p{
+.s-footer>p {
     margin-right: 1rem;
 }
-.map-footer{
+.map-footer {
     border: 0.2rem dashed red;
     border-radius: 20%;
 }
-#map{
+#map {
     border-radius: 20%;
 }
