@@ -1,3 +1,4 @@
+/*DISPLAY GENERAL*/
 main{
     display: flex;
     align-items:center;
@@ -7,34 +8,32 @@ main{
     justify-content: center;
     background-color: cornflowerblue;
 }
+
 #menuses{
     display: grid; 
     grid-template-columns: 50% 50%; 
     grid-template-rows: 50% 50%; 
-     
-    grid-template-areas: 
-      ". ."
-      ". .";
-    
+}
+
+.sect-main{
+    width: 30vw;
+    height: 35vw;
+    border: 1rem double black;
+    border-radius: 10%;
+    margin: 3rem;
+    background-color: blueviolet;   
 }
 
 .titulos-menus{
     text-align: center;
+    font-size: 1vw;
 }
+
 .img-responsive {
-    width: 80%;
-   
+    width: 80%; 
 }
-.sect-main{
-    width: 35vw;
-    height: 45vw;
-    border: 1rem double black;
-    border-radius: 10%;
-    margin: 3rem;
-    background-color: blueviolet;
-    
-    
-}
+
+
 .div-main{
     display: flex;
     flex-direction: row;
@@ -45,11 +44,13 @@ main{
     
 }
 .div-main li{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 #flechaa{
     margin-bottom: 100px;
 }
+
+
 /*MENU RESPONSIVE*/
 .menu-responsive label{
     display: none;
@@ -71,7 +72,7 @@ main{
     display: none;
 }
 
-.flecha, span.flecha2{
+.flecha, .flecha2{
     font-size: 48px;  
 }
 label u{
@@ -80,6 +81,21 @@ label u{
 
 
 
+
+@media (max-width: 1100px){
+
+    .sect-main{
+        height: 40vw;
+
+    }
+    .titulos-menus{
+        font-size: 1.25vw;
+    }
+    .div-main li{
+        font-size: 2.5vw;
+        margin-left: -2.25rem;
+    }
+}
 
 
 
@@ -93,22 +109,27 @@ label u{
         margin: 1rem;
         
     }
-    
+    #menuses{
+        display: flex;
+        flex-direction: column;
+    }
     .sect-main{
         display: none;
         background-color: brown;
-        width: 75vw;
-        margin: 0;
-        align-self: center;
+        width: 52vw;
+        height: auto;
+        margin-left: 18vw;
     }
+    /*EMI SI LEES ESTO PERDON POR CENTRAR EL CONTENEDOR A OJO
+     TE JURO QUE INTENTE DE TODO Y NO ME SALÍA*/
     
     .img-responsive {
         width: 100%;
         height: auto;
     }
     .div-main li{
-        font-size: 2rem;
-        margin-right: 250px;
+        font-size: 5vw;
+        margin-left: -1.25vw;
     }
     .menu-responsive{
         display: flex;
@@ -116,25 +137,27 @@ label u{
     }
    
     
-    
     .menu-responsive label{
         display: flex;
     }
-    .sect-main h1{
-        font-size: 50px;
+
+    
+    .titulos-menus{
+        font-size: 3vw;
     }
     
     #btn-menu-pizza:checked ~ .sect-main {
         display: block;
     }
-    /*
-    #btn-menu-pizza:checked ~ .flecha {
+    
+    #btn-menu-pizza:checked ~ .flecha{
         display: none;
     }
+    
     #btn-menu-pizza:checked ~ .flecha2 {
-        display: block;
+        display: flex;
     }
-    */
+    
     #btn-menu-empanadas:checked ~ .sect-main {
         display: block;
     }
@@ -143,5 +166,16 @@ label u{
     }
     #btn-menu-postres:checked ~ .sect-main {
         display: block;
+    }
+}
+
+@media (max-width: 425px){
+    .sect-main{
+        background-color: cadetblue;
+        margin-left: 15vw;
+    }
+
+    .div-main li{
+        margin-left: -3rem;
     }
 }
