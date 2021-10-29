@@ -98,7 +98,7 @@ ul.slider li:target {
     border-radius: 5%;
 }
 
-#mapa h3,p {
+#mapa h3, #mapa p {
     font-family: 'Lemonada', cursive;
 }
 
