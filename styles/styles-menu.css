@@ -46,9 +46,6 @@ main{
 .div-main li{
     font-size: 2vw;
 }
-#flechaa{
-    margin-bottom: 100px;
-}
 
 
 /*MENU RESPONSIVE*/
@@ -68,11 +65,7 @@ main{
     margin-bottom: 100px;
 }
 
-.flecha2{
-    display: none;
-}
-
-.flecha, .flecha2{
+.flecha{
     font-size: 48px;  
 }
 label u{
@@ -149,15 +142,6 @@ label u{
     #btn-menu-pizza:checked ~ .sect-main {
         display: block;
     }
-    
-    #btn-menu-pizza:checked ~ .flecha{
-        display: none;
-    }
-    
-    #btn-menu-pizza:checked ~ .flecha2 {
-        display: flex;
-    }
-    
     #btn-menu-empanadas:checked ~ .sect-main {
         display: block;
     }
