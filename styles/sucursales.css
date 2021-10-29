@@ -1,0 +1,141 @@
+:root{
+    --colorBordeContainer: rgb(86, 101, 115);
+    --colorBoxShadow: rgb(236, 222, 164);
+    --colorBordeSucursal: rgb(236, 217, 140);
+}
+*{
+    box-sizing: border-box;
+}
+
+.container-succentral {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 1em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". titulo titulo ."
+      "cent-izq suc-central suc-central cent-der";
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    border: black double 0.3rem;
+    border-radius: 5%;
+    padding-bottom: 2rem;
+  }
+  
+  .titulo { grid-area: titulo; 
+            display: flex;
+            justify-content: center;}
+  
+  .suc-central { grid-area: suc-central; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: dashed ;
+    border-color:  var(--colorBordeSucursal);
+    border-radius: 5%;
+
+}
+  
+  .cent-der { grid-area: cent-der;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .cent-izq { grid-area: cent-izq;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+  
+#container-sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.sucursal{
+    margin: 1rem;
+    border: dashed ;
+    border-color:  var(--colorBordeSucursal);
+    border-radius: 5%;
+}
+
+
+.map{
+    align-self: center;
+
+    margin: 1rem;
+    border-radius: 5%;
+    border: black double;
+    width: 50%;
+    height: 50%;
+}
+
+#mapa-ppal{
+    height: 60vh;
+    width: 40vw;
+    align-self: center;
+    border-radius: 5%;
+    margin-top: 2rem;
+}
+
+p,h3,h4{
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+}
+
+.suc-central p,h3,h4{
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+}
+
+.legend {
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    text-align: center;
+}
+
+.sucursal h2{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    ;
+
+}
+
+.logo{
+    border-radius: 10%;
+    width: 12rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.3rem var(--colorBoxShadow);
+}
+
+
+fieldset{
+    text-align: center;
+    border:var(--colorBordeContainer) 0.3rem double;
+    border-radius: 5%;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 900px){
+    #desaparece{
+        display: none;
+    }
+    .legend{
+        font-size: x-large;
+    }
+    #mapa-ppal{
+    height: 40vh;
+    width: 40vw;
+
+    }
+}
+
