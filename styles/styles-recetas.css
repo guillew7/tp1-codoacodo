@@ -1,3 +1,145 @@
+:root {
+    --backgroundColor: rgb(86, 101, 115);
+    --colorAmarillo: rgb(241, 196, 15);
+    --colorCarrito: rgb(243, 156, 18);
+    --colorBordeSeccion: rgb(86, 101, 115)
+}
+
 #tituloPpal {
     text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+}
+
+.fieldsetRecetas {
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem double var(--colorBordeSeccion);
+    border-radius: 5%;
+    margin: 0px 1rem 5rem;
+    align-items: center;
+}
+
+.legendRecetas {
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+}
+
+.videoRecetas {
+    border-radius: 1em;
+    width: 100%;
+}
+
+.ingredientes, dt, dd {
+    font-family: 'Lemonada', cursive;
+}
+
+.ingredientes {
+    font-weight: bold;
+}
+
+
+@media (min-width: 320px) {
+    #tituloPpal {
+        font-size: 2rem;
+    }
+
+    .legendRecetas {
+        margin-left: 1em;
+        font-size: 0.8rem;
+    }
+
+    .ingredientes {
+        font-size: large;
+    }
+
+    dt {
+        font-weight: 500;
+        font-size: small;
+    }
+
+    dd {
+        font-weight: 300;
+        font-size: small;
+    }
+}
+
+@media (min-width: 375px) {
+    .legendRecetas {
+        font-size: 0.9rem;
+    }
+
+    .videoRecetas {
+        height: 13rem;
+    }
+}
+
+@media (min-width: 425px) {
+    #tituloPpal {
+        font-size: 3rem;
+    }
+
+    .legendRecetas {
+        font-size: large;
+    }
+}
+
+@media (min-width: 768px) {
+    #tituloPpal {
+        font-size: 3.5rem;
+    }
+
+    .legendRecetas, .ingredientes {
+        font-size: x-large;
+    }
+
+    dt {
+        font-weight: 600;
+        font-size: medium;
+    }
+
+    dd {
+        font-weight: 400;
+        font-size: medium;
+    }
+
+    .videoRecetas {
+        width: 90%;
+        height: 25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .videoRecetas {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    #tituloPpal {
+        font-size: 4rem;
+    }
+
+    .legendRecetas {
+        margin-left: 3rem;
+    }
+
+    .legendRecetas, .ingredientes {
+        font-size: xx-large;
+    }
+
+    dt {
+        font-weight: 600;
+        font-size: large;
+    }
+
+    dd {
+        font-weight: 400;
+        font-size: large;
+    }
+
+    .videoRecetas {
+        width: 1280px;
+        height: 720px;
+    }
 }
