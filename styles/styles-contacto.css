@@ -36,9 +36,7 @@ font-family: 'Lobster', cursive;
 .legend{
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px var(--colorAmarillo);
-    font-size: 2rem
-    ;
-
+    font-size: 2rem;
 }
 
 #div-datos{

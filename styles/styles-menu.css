@@ -1,18 +1,36 @@
+:root{
+    --colorBordeForm: rgb(86, 101, 115);
+    --colorFondo: rgb(46, 88, 128);
+}
 /*DISPLAY GENERAL*/
 main{
     display: flex;
     align-items:center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin: 2rem;
     justify-content: center;
-    background-color: cornflowerblue;
+    font-family: 'Lobster', cursive;
 }
+
 
 #menuses{
     display: grid; 
     grid-template-columns: 50% 50%; 
     grid-template-rows: 50% 50%; 
+}
+fieldset{
+    border:var(--colorBordeForm) 0.3rem double;
+    border-radius: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    font-size: 2rem;
+    text-align: center;
 }
 
 .sect-main{
@@ -21,7 +39,7 @@ main{
     border: 1rem double black;
     border-radius: 10%;
     margin: 3rem;
-    background-color: blueviolet;   
+    background-color: var(--colorFondo);   
 }
 
 .titulos-menus{
@@ -54,7 +72,7 @@ main{
     height: 30px;
     font-size: 25px;
     padding: 10px;
-    
+    text-shadow: 1px 1px var(--colorAmarillo);
 }
 
 .botones-menu{
@@ -95,12 +113,16 @@ label u{
 @media (max-width: 768px){
 
     main{
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: chocolate;
+        display: grid;
+        grid-template-columns: 100%; 
+        align-items: start;  
         padding: 0.5rem;
         margin: 1rem;
         
+    }
+    
+    legend{
+        align-self: center;
     }
     #menuses{
         display: flex;
@@ -108,32 +130,38 @@ label u{
     }
     .sect-main{
         display: none;
-        background-color: brown;
-        width: 52vw;
+        background-color: var(--colorFondo);
+        width: fit-content;
         height: auto;
-        margin-left: 18vw;
+        margin: 2rem;
+        align-self: center;
+        
     }
     /*EMI SI LEES ESTO PERDON POR CENTRAR EL CONTENEDOR A OJO
      TE JURO QUE INTENTE DE TODO Y NO ME SALÍA*/
     
-    .img-responsive {
-        width: 100%;
-        height: auto;
+    .titulos-menus h1{
+        font-size: 4vw;
     }
-    .div-main li{
-        font-size: 5vw;
-        margin-left: -1.25vw;
-    }
+    
     .menu-responsive{
         display: flex;
         flex-direction: column;
     }
    
-    
     .menu-responsive label{
         display: flex;
+        justify-content: flex-start;
     }
 
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+    .div-main li{
+        font-size: 3.5vw;
+        margin-left: -5.5vw;
+    }
     
     .titulos-menus{
         font-size: 3vw;
@@ -161,5 +189,6 @@ label u{
 
     .div-main li{
         margin-left: -3rem;
+        font-size: 5vw;
     }
 }

@@ -1,0 +1,194 @@
+:root{
+    --colorBordeForm: rgb(86, 101, 115);
+    --colorFondo: rgb(46, 88, 128);
+}
+/*DISPLAY GENERAL*/
+main{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+}
+
+
+#menuses{
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 50% 50%; 
+}
+fieldset{
+    border:var(--colorBordeForm) 0.3rem double;
+    border-radius: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sect-main{
+    width: 30vw;
+    height: 35vw;
+    border: 1rem double black;
+    border-radius: 10%;
+    margin: 3rem;
+    background-color: var(--colorFondo);   
+}
+
+.titulos-menus{
+    text-align: center;
+    font-size: 1vw;
+}
+
+.img-responsive {
+    width: 80%; 
+}
+
+
+.div-main{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+    
+}
+.div-main li{
+    font-size: 2vw;
+}
+
+
+/*MENU RESPONSIVE*/
+.menu-responsive label{
+    display: none;
+    height: 30px;
+    font-size: 25px;
+    padding: 10px;
+    text-shadow: 1px 1px var(--colorAmarillo);
+}
+
+.botones-menu{
+    display: none;
+}
+
+.menu-responsive span{
+    margin-bottom: 100px;
+}
+
+.flecha{
+    font-size: 48px;  
+}
+label u{
+    padding-top: 8px;
+}
+
+
+
+
+@media (max-width: 1100px){
+
+    .sect-main{
+        height: 40vw;
+
+    }
+    .titulos-menus{
+        font-size: 1.25vw;
+    }
+    .div-main li{
+        font-size: 2.5vw;
+        margin-left: -2.25rem;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    main{
+        display: grid;
+        grid-template-columns: 100%; 
+        align-items: start;  
+        padding: 0.5rem;
+        margin: 1rem;
+        
+    }
+    
+    legend{
+        align-self: center;
+    }
+    #menuses{
+        display: flex;
+        flex-direction: column;
+    }
+    .sect-main{
+        display: none;
+        background-color: var(--colorFondo);
+        width: fit-content;
+        height: auto;
+        margin: 2rem;
+        align-self: center;
+        
+    }
+    /*EMI SI LEES ESTO PERDON POR CENTRAR EL CONTENEDOR A OJO
+     TE JURO QUE INTENTE DE TODO Y NO ME SALÍA*/
+    
+    .titulos-menus h1{
+        font-size: 4vw;
+    }
+    
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .menu-responsive label{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+    .div-main li{
+        font-size: 3.5vw;
+        margin-left: -5.5vw;
+    }
+    
+    .titulos-menus{
+        font-size: 3vw;
+    }
+    
+    #btn-menu-pizza:checked ~ .sect-main {
+        display: block;
+    }
+    #btn-menu-empanadas:checked ~ .sect-main {
+        display: block;
+    }
+    #btn-menu-bebidas:checked ~ .sect-main {
+        display: block;
+    }
+    #btn-menu-postres:checked ~ .sect-main {
+        display: block;
+    }
+}
+
+@media (max-width: 425px){
+    .sect-main{
+        background-color: cadetblue;
+        margin-left: 15vw;
+    }
+
+    .div-main li{
+        margin-left: -3rem;
+        font-size: 5vw;
+    }
+}
