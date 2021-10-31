@@ -1,343 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link href="../assets/iconPizza.jpg" rel="icon" />
+        
+        <link rel="stylesheet" href="../styles/normalize.css" />
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../styles/styles.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link href="../assets/iconPizza.jpg" rel="icon" />
+    <body>
+        <header>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
+            <a href="../index.html"><img src="../assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
 
-    <link rel="stylesheet" href="../styles/normalize.css" />
+            <nav class="menu">
+                <ul>
+                    <li><a href="../views/promociones.html" class="navURL">Promociones</a></li>
+                    <li><a href="../views/menu.html" class="navURL">Menú</a></li>
+                    <li><a href="../views/sucursales.html" class="navURL">Sucursales</a></li>
+                    <li><a href="../views/recetas.html" class="navURL">Recetas</a></li>
+                    <li><a href="../views/contacto.html" class="navURL">Contacto</a></li>
+                    <li><a href="../views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/stylers-carrito.css" />
-</head>
-
-<body>
-    <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
-        <a href="../index.html"><img src="../assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="../views/promociones.html" class="navURL">Promociones</a></li>
-                <li><a href="../views/menu.html" class="navURL">Menú</a></li>
-                <li><a href="../views/sucursales.html" class="navURL">Sucursales</a></li>
-                <li><a href="../views/recetas.html" class="navURL">Recetas</a></li>
-                <li><a href="../views/contacto.html" class="navURL">Contacto</a></li>
-                <li><a href="../views/carrito.html" class="navURL" id="linkCarrito"><span
-                            class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <form>
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Pizzas</legend>
-                <dl>
-                    <dt class="dtPizzas">Muzzarela</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="muzzaChica" id="muzzaChica">
-                        <label for="muzzaChica">Chica: </label>
-                        <p class="precio">$ 720</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="muzzaGrande" id="muzzaGrande">
-                        <label for="muzzaGrande">Grande:</label>
-                        <p class="precio">$ 960</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dt class="dtPizzas">Fugazzeta</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="fugazzaChica" id="fugazzaChica">
-                        <label for="fugazzaChica">Chica:</label>
-                        <p class="precio">$ 830</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="fugazzaGrande" id="fugazzaGrande">
-                        <label for="fugazzaGrande">Grande:</label>
-                        <p class="precio">$ 1110</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dt class="dtPizzas">Napolitana</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="napoChica" id="napoChica">
-                        <label for="napoChica">Chica:</label>
-                        <p class="precio">$ 870</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="napoGrande" id="napoGrande">
-                        <label for="napoGrande">Grande:</label>
-                        <p class="precio">$ 1160</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dt class="dtPizzas">Jamón</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="jamonChica" id="jamonChica">
-                        <label for="jamonChica">Chica:</label>
-                        <p class="precio">$ 870</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="jamonGrande" id="jamonGrande">
-                        <label for="jamonGrande">Grande:</label>
-                        <p class="precio">$ 1160</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dt class="dtPizzas">Jamón y morrones</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="jymChica" id="jymChica">
-                        <label for="jymChica">Chica:</label>
-                        <p class="precio">$ 970</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="jymGrande" id="jymGrande">
-                        <label for="jymGrande">Grande:</label>
-                        <p class="precio">$ 1295</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                    <dt class="dtPizzas">Fainá</dt>
-                    <dd class="ddPizzas">
-                        <input type="checkbox" value="faina" id="faina">
-                        <label for="faina">Porción:</label>
-                        <p class="precio">$ 90</p>
-                        <input type="number" value="0" class="cant">
-                    </dd>
-                </dl>
-            </fieldset>
-
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Empanadas</legend>
-                <dd class="empanadas">
-                    <input type="checkbox" value="jyq" id="jyq">
-                    <label for="jyq">
-                        <p>Jamón y Queso</p>
-                    </label>
-                    <p class="precio">$ 160</p>
-                    <input type="number" value="0" class="cant">
-                </dd>
-                <dd class="empanadas">
-                    <input type="checkbox" value="carne" id="carne">
-                    <label for="carne">
-                        <p>Carne</p>
-                    </label>
-                    <p class="precio">$ 160</p>
-                    <input type="number" value="0" class="cant">
-                </dd>
-                <dd class="empanadas">
-                    <input type="checkbox" value="humita" id="humita">
-                    <label for="humita">
-                        <p>Humita</p>
-                    </label>
-                    <p class="precio">$ 160</p>
-                    <input type="number" value="0" class="cant">
-                </dd>
-                <dd class="empanadas">
-                    <input type="checkbox" value="pollo" id="pollo">
-                    <label for="pollo">
-                        <p>Pollo</p>
-                    </label>
-                    <p class="precio">$ 160</p>
-                    <input type="number" value="0" class="cant">
-                </dd>
-                <dd class="empanadas">
-                    <input type="checkbox" value="verdura" id="verdura">
-                    <label for="verdura">
-                        <p>Verdura</p>
-                    </label>
-                    <p class="precio">$ 160</p>
-                    <input type="number" value="0" class="cant">
-                </dd>
-            </fieldset>
-
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Promociones</legend>
-            </fieldset>
-
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Bebidas</legend>
-
-                <dd class="bebidas">
-                    <input type="checkbox" value="aguaSinGas" id="aguaSinGas">
-                    <label for="aguaSinGas">
-                        <p>Agua mineral sin gas 500ml</p>
-                    </label>
-                    <p class="precio">$ 150</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="aguaConGas" id="aguaConGas">
-                    <label for="aguaConGas">
-                        <p>Agua mineral con gas 500ml</p>
-                    </label>
-                    <p class="precio">$ 150</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="cocaClasica" id="cocaClasica">
-                    <label for="cocaClasica">
-                        <p>Coca-Cola (clásica) 500ml</p>
-                    </label>
-                    <p class="precio">$ 200</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="cocaClasica" id="cocaClasica">
-                    <label for="cocaClasica">
-                        <p>Coca-Cola (clásica) 500ml</p>
-                    </label>
-                    <p class="precio">$ 200</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="cocaSinAzucar" id="cocaSinAzucar">
-                    <label for="cocaSinAzucar">
-                        <p>Coca-Cola (sin azúcar) 500ml</p>
-                    </label>
-                    <p class="precio">$ 200</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="spriteClasica" id="spriteClasica">
-                    <label for="spriteClasica">
-                        <p>Sprite (clásica) 500ml</p>
-                    </label>
-                    <p class="precio">$ 200</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="spriteSinAzucar" id="spriteSinAzucar">
-                    <label for="spriteSinAzucar">
-                        <p>Sprite (sin azúcar) 500ml</p>
-                    </label>
-                    <p class="precio">$ 200</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-                <dd class="bebidas">
-                    <input type="checkbox" value="cerveza" id="cerveza">
-                    <label for="cerveza">
-                        <p>Cerveza</p>
-                    </label>
-                    <p class="precio">$ 480</p>
-                    <input type="number" value="0" class="cant cantBebidas">
-                </dd>
-            </fieldset>
-
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Postres</legend>
-                <dd class="postres">
-                    <input type="checkbox" value="flan" id="flan">
-                    <label for="flan">
-                        <p>Flan casero</p>
-                    </label>
-                    <p class="precio">$ 230</p>
-                    <input type="number" value="0" class="cant cantPostre">
-                </dd>
-                <dd class="postres">
-                    <input type="checkbox" value="helado" id="helado">
-                    <label for="helado">
-                        <p>Helado</p>
-                    </label>
-                    <p class="precio">$ 250</p>
-                    <input type="number" value="0" class="cant cantPostre">
-                    </di>
-                <dd class="postres">
-                    <input type="checkbox" value="volcan" id="volcan">
-                    <label for="volcan">
-                        <p>Volcan de chocolate</p>
-                    </label>
-                    <p class="precio">$ 350</p>
-                    <input type="number" value="0" class="cant cantPostre">
-                </dd>
-                <dd class="postres">
-                    <input type="checkbox" value="gelatina" id="gelatina">
-                    <label for="gelatina">
-                        <p>Gelatina</p>
-                    </label>
-                    <p class="precio">$ 150</p>
-                    <input type="number" value="0" class="cant cantPostre">
-                </dd>
-                <dd class="postres">
-                    <input type="checkbox" value="soufle" id="soufle">
-                    <label for="soufle">
-                        <p>Soufle</p>
-                    </label>
-                    <p class="precio">$ 340</p>
-                    <input type="number" value="0" class="cant cantPostre">
-                </dd>
-            </fieldset>
-
-            <fieldset class="fieldsetCarrito">
-                <legend class="legendCarrito">Datos para la entrega</legend>
-                <dd class="domicilio">
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" name="nombre" id="nombre" required class="shadow">
-                </dd>
-                <dd class="domicilio">
-                    <label for="tel">Teléfono:</label>
-                    <input type="tel" id="tel" name="tel" placeholder="11-1111-1111"
-                        pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required class="shadow">
-                </dd>
-                <dd class="domicilio">
-                    <label for="domicilio">Domicilio de entrega:</label>
-                    <input type="text" name="domicilio" id="domicilio" required class="shadow">
-                </dd>
-                <dd class="domicilio altura">
-                    <div>
-                    <label for="altura">Nro.:</label>
-                    <input type="number" name="altura" id="altura" required class="data shadow">
+        <footer>
+            <section id="redes">
+                <h3>Síguenos en:</h3>
+                <div id="btn-redes">
+                    <a href="https://www.facebook.com/" target="_blank" class="icon-redes"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="icon-redes"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon-redes"><i class="fab fa-instagram-square"></i></a>
                 </div>
-                <div>
-                    <label for="piso">Piso:</label>
-                    <input type="number" name="piso" id="piso" class="data shadow">
-                </div>
-                <div>
-                    <label for="dpto">Dpto.:</label>
-                    <input type="text" name="dpto" id="dpto" class="data shadow">
-                </div>
-                </dd>
-                <dd class="domicilio">
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea type="text" name="comentarios" id="comentarios" cols="120" rows="10" class="shadow"></textarea>
-                </dd>
-            </fieldset>
-            <input type="submit" value="Hacer Pedido" class="btn-pedido">
-        </form>
-    </main>
-
-    <footer>
-        <section id="redes">
-            <h3>Síguenos en:</h3>
-            <div id="btn-redes">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram-square"></i>
-            </div>
-        </section>
-
-        <section id="derechos">
-            <p>Pizzerías El Manjar 2021</p>
-            <p>Todos los derechos reservados©</p>
-        </section>
-
-        <a href="https://wa.me/5491158277881" target="_blank" class="material-icons outlined" id="btn-wapp">whatsapp</a>
-    </footer>
-    <script src="https://kit.fontawesome.com/48e5edb65c.js" crossorigin="anonymous"></script>
-</body>
-
+                </section>
+        
+            <section id="derechos">
+                <p>Pizzerías El Manjar 2021</p>
+                <p>Todos los derechos reservados©</p>
+            </section>
+        
+            <a href="https://wa.me/5491158277881" target="_blank" class="material-icons outlined" id="btn-wapp">whatsapp</a>
+        </footer>
+        <script src="https://kit.fontawesome.com/48e5edb65c.js" crossorigin="anonymous"></script>
+    </body>
 </html>
