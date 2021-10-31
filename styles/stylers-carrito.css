@@ -1,0 +1,151 @@
+:root {
+    --backgroundColor: rgb(86, 101, 115);
+    --colorAmarillo: rgb(241, 196, 15);
+    --colorCarrito: rgb(243, 156, 18);
+    --colorBordeSeccion: rgb(86, 101, 115);
+    --colorBoxShadow: rgb(236, 222, 164);
+    --colorBoton: rgb(252, 204, 128);
+}
+
+.fieldsetCarrito {
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem double var(--colorBordeSeccion);
+    border-radius: 5%;
+    margin: 1rem 5rem;
+    align-items: center;
+}
+
+.legendCarrito {
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+}
+
+.dtPizzas {
+    font-family: 'Lemonada', cursive;
+    font-weight: 600;
+}
+
+.ddPizzas, .empanadas, .bebidas, .postres, .domicilio  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lemonada', cursive;
+}
+
+.ddPizzas > * {
+    margin: 1% 1rem;
+}
+
+.empanadas, .bebidas, .postres, .domicilio {
+    width: 30rem;
+}
+
+.empanadas > *, .bebidas > *, .postres > *, .domicilio > * {
+    margin: 1%;
+}
+
+.cantBebidas, .cantPostre, .data {
+    width: 5rem;
+}
+
+.cant, .shadow {
+    box-shadow: 0.15rem 0.15rem var(--colorBoxShadow);
+}
+
+.btn-pedido {
+    display: block;
+    font-family: 'Lobster', curisva;
+    font-size: x-large;
+    background-color: var(--colorBoton);
+    margin: 0px auto 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 320px) {
+    .legendCarrito {
+        margin-left: 1em;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .fieldsetCarrito {
+        margin: 1rem 1.3rem;
+    }
+
+    .legendCarrito {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .fieldsetCarrito {
+        margin: 2rem 2rem;
+    }
+
+    .legendCarrito {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fieldsetCarrito {
+        margin: 2rem 7rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .fieldsetCarrito {
+        margin: 2rem 15rem;
+    }
+
+    .legendCarrito {
+        margin-left: 3rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .fieldsetCarrito {
+        margin: 1rem 0.1rem;
+    }
+
+    dd {
+        margin-left: 0px;
+    }
+
+    .cant {
+        width: 3rem;
+    }
+
+    .ddPizzas > * {
+        margin: 1% 0.5rem;
+    }
+
+    .empanadas > *, .bebidas > *, .postres > *, .domicilio > * {
+        margin: 0.5%;
+    }
+
+    .ddPizzas, .empanadas, .bebidas, .postres, .domicilio {
+        font-size: small;
+    }
+
+    .empanadas, .bebidas, .postres, .domicilio {
+        width: 15rem;
+    }
+
+    .domicilio, .altura {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .domicilio label, .domicilio div {
+        margin-top: 5%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
