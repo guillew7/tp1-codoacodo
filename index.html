@@ -1,114 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Guillermo Williams, Joaquín Rovner y Yamila Bruzzone" />
+		<title>Pizzería - El Manjar</title>
+		<link href="./assets/iconPizza.jpg" rel="icon" />
+		
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Guillermo Williams, Joaquín Rovner y Yamila Bruzzone" />
-  <title>Pizzería - El Manjar</title>
-  <link href="./assets/iconPizza.jpg" rel="icon" />
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <link rel="stylesheet" href="./styles/styles-index.css" />
-</head>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/styles-index.css" />
+	</head>
 
-<body>
-  <header>
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
-    <a href="index.html"><img src="assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
+	<body>
+		<header>
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
+			<a href="index.html"><img src="assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
 
-    <nav class="menu">
-      <ul>
-        <li><a href="views/promociones.html" class="navURL">Promociones</a></li>
-        <li><a href="views/menu.html" class="navURL">Menú</a></li>
-        <li><a href="views/sucursales.html" class="navURL">Sucursales</a></li>
-        <li><a href="views/recetas.html" class="navURL">Recetas</a></li>
-        <li><a href="views/contacto.html" class="navURL">Contacto</a></li>
-        <li><a href="views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
-      </ul>
-    </nav>
-  </header>
+			<nav class="menu">
+			<ul>
+				<li><a href="views/promociones.html" class="navURL">Promociones</a></li>
+				<li><a href="views/menu.html" class="navURL">Menú</a></li>
+				<li><a href="views/sucursales.html" class="navURL">Sucursales</a></li>
+				<li><a href="views/recetas.html" class="navURL">Recetas</a></li>
+				<li><a href="views/contacto.html" class="navURL">Contacto</a></li>
+				<li><a href="views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined"
+					id="carrito">delivery_dining</span></a></li>
+			</ul>
+			</nav>
+		</header>
 
-  <main>
-    <a href="https://wa.me/5491158277881" target="_blank" class="material-icons outlined" id="btn-wapp">whatsapp</a>
+		<main>
+			<fieldset class="fieldset">
+				<legend class="legend">
+					<h2>Galería</h2>
+				</legend>
+				<section class="containerCarrusel">
+					<ul class="slider carrusel">
+						<li class="carrusel" id="slide1">
+							<img class="carruselImg" src="assets/index/slide1.jpg" / alt="piiza">
+							<img class="carruselImg2" src="assets/index/slide1_2.jpg" / alt="piiza">
+						</li>
+						<li class="carrusel" id="slide2">
+							<img class="carruselImg" src="assets/index/slide2.jpg" / alt="empanadas">
+							<img class="carruselImg2" src="assets/index/slide2_2.jpg" / alt="empanadas">
+						</li>
+						<li class="carrusel" id="slide3">
+							<img class="carruselImg" src="assets/index/slide3.jpg" alt="pizza">
+							<img class="carruselImg2" src="assets/index/slide3_2.jpg" alt="pizza">
+						</li>
+						<li class="carrusel" id="slide4">
+							<img class="carruselImg" src="assets/index/slide4.jpg" alt="empanadas">
+							<img class="carruselImg2" src="assets/index/slide4_2.jpg" alt="empanadas">
+						</li>
+					</ul>
 
-    <section class="containerCarrusel">
-  
-      <ul class="slider carrusel">
-        <li class="carrusel" id="slide1">
-          <img src="assets/slide1.jpg"/ alt="piiza">
-        </li>
-        <li class="carrusel" id="slide2">
-          <img src="assets/slide2.jpg"/ alt="empanadas">
-        </li>
-        <li class="carrusel" id="slide3">
-          <img src="assets/slide3.jpg" alt="pizza">
-        </li>
-        <li class="carrusel" id="slide4">
-          <img src="assets/slide4.jpg" alt="empanadas">
-        </li>
-      </ul>
-      
-      <ul class="menuCarrusel carrusel">
-        <li class="carrusel">
-          <a href="#slide1">1</a>
-        </li>
-        <li class="carrusel">
-          <a href="#slide2">2</a>
-        </li>
-        <li class="carrusel">
-          <a href="#slide3">3</a>
-        </li>
-        <li class="carrusel">
-          <a href="#slide4">4</a>
-        </li>
-      </ul>
-      
-    </section>
+					<ul class="menuCarrusel carrusel">
+						<li class="carrusel">
+							<a href="#slide1">1</a>
+						</li>
+						<li class="carrusel">
+							<a href="#slide2">2</a>
+						</li>
+						<li class="carrusel">
+							<a href="#slide3">3</a>
+						</li>
+						<li class="carrusel">
+							<a href="#slide4">4</a>
+						</li>
+					</ul>
 
-    <section class="s-main" id="seccion-delivery">
-      <img src="assets/delivery.png" alt="delivery" id="delivery">
-    </section>
-    
-    <!-- <section class="s-main">
-      <img src="https://picsum.photos/200/300" alt="foto">
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </section>
-    
-    <section class="s-main">
-      <img src="https://picsum.photos/200/300" alt="foto">
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </section>
-    
-    <section class="s-main">
-      <img src="https://picsum.photos/200/300" alt="foto">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </section> -->
-  </main>
-  
-  <footer>
-    <section class="s-footer">
-      <p>Sucursal central <br>
-        Telefono: (011)-1111-1111 <br>
-        Avenida Corrientes 1174
-      </p>
-      <span class="map-footer">
-        <iframe id="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0151907626405!2d-58.38508278544497!3d-34.60377738045945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5f61d4375%3A0xb8b7d9830b6a349f!2sAv.%20Corrientes%201174-1102%2C%20C1043AAY%20CABA!5e0!3m2!1ses-419!2sar!4v1633703492890!5m2!1ses-419!2sar"
-          width="150" height="150" style="border:0;" loading="lazy">
-        </iframe>
-      </span>
-    </section>
-    
-    <p>Pizzerías El Manjar 2021 <br>
-      Todos los derechos reservados© </p>
-  </footer>
-</body>
+				</section>
+			</fieldset>
 
+			<fieldset class="fieldset">
+				<legend class="legend">
+					<h2>Delivery</h2>
+				</legend>
+
+				<section class="s-main" id="seccion-delivery">
+					<img src="assets/index/delivery.png" alt="delivery" id="delivery">
+				</section>
+			</fieldset>
+
+			<fieldset class="fieldset">
+				<legend class="legend">
+					<h2>Sucursal principal</h2>
+				</legend>
+
+				<section id="mapa">
+					<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0151907626405!2d-58.38508278544497!3d-34.60377738045945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5f61d4375%3A0xb8b7d9830b6a349f!2sAv.%20Corrientes%201174-1102%2C%20C1043AAY%20CABA!5e0!3m2!1ses-419!2sar!4v1633703492890!5m2!1ses-419!2sar"
+					loading="lazy">
+					</iframe>
+					<h3>Dirección y Teléfono</h3>
+					<p>Av. Corrientes 1174, CABA (CP: 1043)</p>
+					<p>Telefono: (011)-1111-1111</p>
+					<h3>Horarios de atención</h3>
+					<p>Todos los días de 8am a 0:30pm</p>
+				</section>
+			</fieldset>
+		</main>
+
+		<footer>
+			<section id="redes">
+			<h3>Síguenos en:</h3>
+			<div id="btn-redes">
+				<a href="https://www.facebook.com/" target="_blank" class="icon-redes"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/" target="_blank" class="icon-redes"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/" target="_blank" class="icon-redes"><i class="fab fa-instagram-square"></i></a>
+			</div>
+			</section>
+		
+			<section id="derechos">
+			<p>Pizzerías El Manjar 2021</p>
+			<p>Todos los derechos reservados©</p>
+			</section>
+
+			<a href="https://wa.me/5491158277881" target="_blank" class="material-icons outlined" id="btn-wapp">whatsapp</a>
+		</footer>
+	<script src="https://kit.fontawesome.com/48e5edb65c.js" crossorigin="anonymous"></script>
+	</body>
 </html>

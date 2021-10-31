@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link href="../assets/iconPizza.jpg" rel="icon" />
-    <link rel="stylesheet" href="../styles/normalize.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/contacto.css">
-</head>
-<body>
-    <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
-        <a href="../index.html"><img src="../assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pizzería - El Manjar</title>
+		<link href="../assets/iconPizza.jpg" rel="icon" />
+		
+		<link rel="stylesheet" href="../styles/normalize.css" />
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <nav class="menu">
-            <ul>
-                <li><a href="../views/promociones.html" class="navURL">Promociones</a></li>
-                <li><a href="../views/menu.html" class="navURL">Menú</a></li>
-                <li><a href="../views/sucursales.html" class="navURL">Sucursales</a></li>
-                <li><a href="../views/recetas.html" class="navURL">Recetas</a></li>
-                <li><a href="../views/contacto.html" class="navURL">Contacto</a></li>
-                <li><a href="../views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="pagina-contacto">
-    <h1 id="titulo">Contacto</h1>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/styles-contacto.css">
+	</head>
+	
+	<body>
+		<header>
+			<input type="checkbox" id="btn-menu">
+			<label for="btn-menu"><span class="material-icons outlined" id="btn-menu-hamburguesa">menu</span></label>
+			<a href="../index.html"><img src="../assets/logoPizzeria.png" alt="logotipo" id="logotipo"></a>
 
+			<nav class="menu">
+				<ul>
+					<li><a href="../views/promociones.html" class="navURL">Promociones</a></li>
+					<li><a href="../views/menu.html" class="navURL">Menú</a></li>
+					<li><a href="../views/sucursales.html" class="navURL">Sucursales</a></li>
+					<li><a href="../views/recetas.html" class="navURL">Recetas</a></li>
+					<li><a href="../views/contacto.html" class="navURL">Contacto</a></li>
+					<li><a href="../views/carrito.html" class="navURL" id="linkCarrito"><span class="material-icons outlined" id="carrito">delivery_dining</span></a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <section id="s-form">
-        <form id="formulario" action="https://formspree.io/f/xyylvqyy" method="post">
+		<main id="pagina-contacto">
+			<h1 id="titulo">Contacto</h1>
+			<section id="s-form">
+				<form id="formulario" action="https://formspree.io/f/xyylvqyy" method="post" target="_blank">
 
-            
+					<fieldset id=fieldset>
+						<legend class="legend">Datos personales</legend>
+						<div id="div-datos">
+							<label class="label-form"> <span>Nombre:  </span> <input class="input-form" type="text" name="nombre" id="nombre" required></label> 
+							<label class="label-form"> <span>Apellido:  </span> <input class="input-form"  type="text" name="apellido" id="apellido" required></label> 
+							<label class="label-form"> <span>Email: </span> <input class="input-form"  type="text" name="email" id="email" required></label> 
+							<label class="label-form"> <span>Telefono:  </span> <input class="input-form"  type="text" name="telefono" id="telefono" placeholder="Ingrese solo números: 01122224444" minlength="8" required></label> 
+							
 
-            <fieldset id=fieldset>
-            <legend>Datos personales</legend>
-            <label> Nombre: <input type="text" name="nombre" id="nombre" required></label> 
-            <label> Apellido: <input type="text" name="apellido" id="apellido" required></label> 
-            <label> Email: <input type="text" name="email" id="email" required></label> 
-            <label> Teléfono: <input type="text" name="telefono" id="telefono"></label> 
+							<label class="label-form"><span>Motivo de consulta:</span>
+							<select name="consulta" class="input-form">
+								<option value="sugerencias">Sugerencias o reclamos</option>
+								<option value="franquicia">Quiero abrir una franquicia</option>
+								<option value="otros">Otros</option>
+							</select> </label>
+						</div>
+						<br>
 
-            <label>Motivo de consulta:</label>
-            <select name="consulta" id="consulta">
-            <option value="sugerencias">Sugerencias o reclamos</option>
-            <option value="franquicia">Quiero abrir una franquicia</option>
-            <option value="otros">Otros</option>
-            </select> <br> <br>
+						<textarea name="comentarios" rows="20" cols="50" onfocus="clearContents(this);">Escribinos acá tus comentarios...</textarea> <br> 
+						<label  class="label-form" id="suscripcion"><input type="checkbox" id="cbox" value="suscripcion"> Quiero suscribirme a la lista de contactos de "El Manjar" para recibir novedades sobre promociones y descuentos</label><br>
+						<button id="botonEnviar" type="submit" onclick="validarFormulario()">Enviar</button>
+					</fieldset>
+					
+				</form>
+			</section>
+			
+		</main>
 
-            <textarea name="comentarios" rows="20" cols="50">Escribinos acá tus comentarios...</textarea> <br> 
-            <label id="suscripcion"><input type="checkbox" id="cbox" value="suscripcion"> Quiero suscribirme a la lista de contactos de "El Manjar" para recibir novedades sobre promociones y descuentos</label><br>
-            <button id="botonEnviar" type="submit" onclick="validarFormulario()">Enviar</button>
-            </fieldset>
-            
-        </form>
-    </section>
-    <script src="../js/contacto.js"></script>
-</main>
-</body>
+		<footer>
+			<section id="redes">
+				<h3>Síguenos en:</h3>
+				<div id="btn-redes">
+					<a href="https://www.facebook.com/" target="_blank" class="icon-redes"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://twitter.com/" target="_blank" class="icon-redes"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/" target="_blank" class="icon-redes"><i class="fab fa-instagram-square"></i></a>
+				</div>
+				</section>
+		
+			<section id="derechos">
+				<p>Pizzerías El Manjar 2021</p>
+				<p>Todos los derechos reservados©</p>
+			</section>
+
+			<a href="https://wa.me/5491158277881" target="_blank" class="material-icons outlined" id="btn-wapp">whatsapp</a>
+		</footer>
+		<script src="https://kit.fontawesome.com/48e5edb65c.js" crossorigin="anonymous"></script>
+		<script src="../js/contacto.js"></script>
+	</body>
 </html>

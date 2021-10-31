@@ -3,6 +3,20 @@
     --colorAmarillo: rgb(241, 196, 15);
     --colorCarrito: rgb(243, 156, 18);
     --verdewapp:rgb(9, 165, 9);
+    --colorBordeSeccion: rgb(86, 101, 115)
+}
+
+.fieldset {
+    border: 0.3rem double var(--colorBordeSeccion);
+    border-radius: 5%;
+    text-align: center;
+    margin: 0px 1rem 5rem;
+}
+
+.legend {
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    text-shadow: 1px 1px var(--colorAmarillo);
 }
 
 .containerCarrusel {
@@ -16,6 +30,12 @@
     margin: 0;
     list-style: none;
 }
+
+.carruselImg2 {
+    display: none;
+    border-radius: 5%;
+}
+
 
 ul.slider{
     position: relative;
@@ -32,10 +52,11 @@ ul.slider li {
     background:#fff;
 }
 
-ul.slider li img{
+.carruselImg {
     width: 100%;
-    height: inherit;
+    height: 100%;
     object-fit: cover;
+    border-radius: 5%;
 }
 
 ul.slider li:first-child {
@@ -66,31 +87,57 @@ ul.slider li:target {
     width: 20px;
     height: 20px;
     font-size: 20px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 #delivery {
     display: block;
-    margin: 10px auto;
     width: 95%;
+    margin: auto;
     border: 15px solid var(--backgroundColor);
+    border-radius: 5%;
 }
 
-/* main{
-    display: flex;
-    align-items:center;
-    margin: 2rem;
-    flex-wrap:wrap;
-
+#mapa h3, #mapa p {
+    font-family: 'Lemonada', cursive;
 }
-.s-main{
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-    height: 30rem;
-    justify-content:space-around;
-    align-items: center;
-    border: 0.1rem solid black;
-    border-radius: 10%;
-    margin: 1rem;
-} */
+
+#mapa iframe {
+    width: 70%;
+    height: 40vh;
+    border: 1px solid;
+    border-radius: 5%;
+}
+
+@media (max-width: 640px) {
+    .carruselImg {
+        display: none;
+    }
+
+    .carruselImg2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fieldset {
+        margin: 0px 1rem 1rem;
+    }
+}
+
+@media (max-width: 410px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    #delivery {
+        border: 5px solid var(--backgroundColor);
+    }
+}
+
+@media (max-width: 358px) {
+    .menuCarrusel li a {
+        padding: 0.2em;
+    }
+}

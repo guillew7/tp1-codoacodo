@@ -1,0 +1,134 @@
+:root{
+    --colorBordeForm: rgb(86, 101, 115);
+    --colorBoton: rgb(252, 204, 128);
+    --colorBoxShadow: rgb(236, 222, 164);
+    --colorBoxShadow: rgb(236, 222, 164);
+}
+*{
+    box-sizing: border-box;
+}
+
+#pagina-contacto{
+font-family: 'Lobster', cursive;
+}
+
+
+#s-form{
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+#fieldset{
+    text-align: center;
+    border:var(--colorBordeForm) 0.3rem double;
+    border-radius: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#titulo{
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    text-align: center;
+}
+
+.legend{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px var(--colorAmarillo);
+    font-size: 2rem;
+}
+
+#div-datos{
+display: flex;
+flex-direction: column;
+}
+
+.label-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.label-form span{
+    margin-right: 1rem;
+}
+
+#en-linea{
+    display: inline;
+}
+
+.input-form, textarea, select{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    box-shadow: 0.3rem 0.3rem var(--colorBoxShadow);
+}
+
+.input-form, select{
+    width: 40vw;
+    border-radius: 10%;
+}
+
+.input-form:focus{
+    outline: none;
+}
+
+select, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    border-radius: 2%;
+    box-shadow: 0.3rem 0.3rem var(--colorBoxShadow);
+}
+
+
+#suscripcion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+#cbox{
+    box-shadow: none;
+}
+
+button{
+    height: 3rem;
+    border-radius: 20%;
+    background-color: var(--colorBoton);
+}
+
+
+@media (max-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    #s-form{ 
+        font-size: 1.2rem;
+    }
+    .input-form,textarea,select{
+        font-size: 0.7rem;
+    }
+    button{
+        height: 2rem;
+    }
+    #suscripcion{
+            font-size: 0.6rem;
+    }
+}
+@media (max-width:360px){
+    h1{
+        font-size: 1rem;
+    }
+    #s-form{ 
+        font-size: 1rem;
+    }
+    .input-form,textarea,select{
+        font-size: 0.5rem;
+    }
+    #suscripcion{
+        font-size: 0.4rem;
+    }
+}
