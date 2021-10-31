@@ -3,7 +3,6 @@
     --colorAmarillo: rgb(241, 196, 15);
     --colorCarrito: rgb(243, 156, 18);
     --verdewapp:rgb(9, 165, 9);
-    --colorHoverIcon:rgb(102, 128, 153);
 }
 
 /*HEADER*/
@@ -194,7 +193,7 @@ footer {
 }
 
 #btn-redes i:hover{
-    color:var(--colorHoverIcon);
+    color:var(--colorAmarillo);
 }
 
 #redes h3 {
