@@ -26,7 +26,7 @@
     font-weight: 600;
 }
 
-.ddPizzas, .empanadas, .bebidas, .postres, .domicilio  {
+.ddPizzas, .empanadas, .bebidas, .postres, .domicilio, .promociones  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@
     margin: 1% 1rem;
 }
 
-.empanadas, .bebidas, .postres, .domicilio {
+.empanadas, .bebidas, .postres, .domicilio, .promociones {
     width: 30rem;
 }
 
@@ -124,15 +124,15 @@
         margin: 1% 0.5rem;
     }
 
-    .empanadas > *, .bebidas > *, .postres > *, .domicilio > * {
+    .empanadas > *, .bebidas > *, .postres > *, .domicilio > *, .promociones > * {
         margin: 0.5%;
     }
 
-    .ddPizzas, .empanadas, .bebidas, .postres, .domicilio {
+    .ddPizzas, .empanadas, .bebidas, .postres, .domicilio, .promociones {
         font-size: small;
     }
 
-    .empanadas, .bebidas, .postres, .domicilio {
+    .empanadas, .bebidas, .postres, .domicilio, .promociones {
         width: 15rem;
     }
 
