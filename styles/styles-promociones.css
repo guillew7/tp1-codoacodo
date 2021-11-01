@@ -1,6 +1,6 @@
 :root{
     --colorBordeForm: rgb(86, 101, 115);
-    --colorFondo: rgb(46, 88, 128);
+    --colorFondo: rgb(46, 124, 128);
 }
 /*DISPLAY GENERAL*/
 main{
@@ -9,15 +9,13 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     margin: 2rem;
-    justify-content: center;
     font-family: 'Lobster', cursive;
 }
 
 
 #menuses{
-    display: grid; 
+    display: grid;
     grid-template-columns: 50% 50%; 
-    grid-template-rows: 50% 50%; 
 }
 fieldset{
     border:var(--colorBordeForm) 0.3rem double;
@@ -35,7 +33,7 @@ legend{
 
 .sect-main{
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     border: 1rem double black;
     border-radius: 10%;
     margin: 3rem;
@@ -47,6 +45,7 @@ legend{
     font-size: 1vw;
 }
 
+
 .img-responsive {
     width: 80%; 
 }
@@ -54,57 +53,25 @@ legend{
 
 .div-main{
     display: flex;
-    flex-direction: row;
     height: auto;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3rem;
-    
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25vw;
 }
-.div-main li{
-    font-size: 2vw;
-}
-
-
-/*MENU RESPONSIVE*/
-.menu-responsive label{
-    display: none;
-    height: 30px;
-    font-size: 25px;
-    padding: 10px;
-    text-shadow: 1px 1px var(--colorAmarillo);
-}
-
-.botones-menu{
-    display: none;
-}
-
-.menu-responsive span{
-    margin-bottom: 100px;
-}
-
-.flecha{
-    font-size: 48px;  
-}
-label u{
-    padding-top: 8px;
-}
-
-
 
 
 @media (max-width: 1100px){
 
     .sect-main{
-        height: 40vw;
+        height: 35vw;
 
     }
     .titulos-menus{
         font-size: 1.25vw;
     }
-    .div-main li{
-        font-size: 2.5vw;
-        margin-left: -2.25rem;
+    
+    .div-main{
+        font-size: 1.75vw;
     }
 }
 
@@ -118,77 +85,53 @@ label u{
         align-items: start;  
         padding: 0.5rem;
         margin: 1rem;
-        
     }
-    
     legend{
         align-self: center;
     }
     #menuses{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%; 
     }
     .sect-main{
-        display: none;
-        background-color: var(--colorFondo);
-        width: fit-content;
-        height: auto;
-        margin: 2rem;
+        width: 35vw;
+        height: 47vw;
         align-self: center;
-        
+        margin: 2vw;
     }
-    /*EMI SI LEES ESTO PERDON POR CENTRAR EL CONTENEDOR A OJO
-     TE JURO QUE INTENTE DE TODO Y NO ME SALÍA*/
     
     .titulos-menus h1{
         font-size: 4vw;
     }
     
-    .menu-responsive{
-        display: flex;
-        flex-direction: column;
-    }
-   
-    .menu-responsive label{
-        display: flex;
-        justify-content: flex-start;
-    }
 
     .img-responsive {
         width: 100%;
         height: auto;
     }
-    .div-main li{
-        font-size: 3.5vw;
-        margin-left: -5.5vw;
+    
+    .div-main{
+        font-size: 2vw;
     }
     
-    .titulos-menus{
-        font-size: 3vw;
-    }
-    
-    #btn-menu-pizza:checked ~ .sect-main {
-        display: block;
-    }
-    #btn-menu-empanadas:checked ~ .sect-main {
-        display: block;
-    }
-    #btn-menu-bebidas:checked ~ .sect-main {
-        display: block;
-    }
-    #btn-menu-postres:checked ~ .sect-main {
-        display: block;
-    }
+
 }
 
-@media (max-width: 425px){
+@media (max-width: 567px){
     .sect-main{
-        background-color: cadetblue;
-        margin-left: 15vw;
+        background-color: var(--colorFondo);
+        width: 50vw;
+        height: 85vw;
+        margin: 1.5rem;
     }
-
-    .div-main li{
-        margin-left: -3rem;
-        font-size: 5vw;
+    .titulos-menus h1{
+        font-size: 7vw
+    }
+    .div-main{
+        font-size: 4vw;
+    }
+    #menuses{
+        display: flex;
+        flex-direction: column;
     }
 }
